@@ -10,6 +10,7 @@ public class ClientOperation {
         String address = "//localhost/MyServer";
         if (args.length == 1) address = args[0];
         RMIInterface lookup = (RMIInterface) Naming.lookup(address);
+        System.out.println("Got server handle " + lookup);
 
         Console console = System.console();
         if (console == null) {
