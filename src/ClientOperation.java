@@ -18,7 +18,7 @@ public class ClientOperation {
             return;
         }
 
-        String line = System.console().readLine("What is your name?");
+        String line = System.console().readLine("What is your name? ");
         String response = lookup.helloTo(line);
         System.out.println(response);
     }
